@@ -1,1 +1,18 @@
 @import 'tailwindcss';
+
+@theme {
+  --background-image-button-gradient: linear-gradient(
+    to right,
+    #2b944e,
+    #cb4ec3
+  );
+  --animate-spin: spin 0.5s ease-in-out 1;
+  @keyframes spin {
+    0% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
